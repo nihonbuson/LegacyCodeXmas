@@ -5,9 +5,13 @@ public class Holiday {
 	public boolean isXmas(){
 		//100 lines code here...
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MM/dd");
-		LocalDate localDate = LocalDate.now();
+		LocalDate localDate = getNow();
 		//100 lines code here...
 		return dtf.format(localDate).equals("12/25");
+	}
+
+	private LocalDate getNow() {
+		return LocalDate.now();
 	}
 
 }
