@@ -10,7 +10,7 @@ public class Holiday {
 		return dtf.format(localDate).equals("12/25");
 	}
 
-	private LocalDate getNow() {
+	protected LocalDate getNow() {
 		return LocalDate.now();
 	}
 
