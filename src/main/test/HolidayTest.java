@@ -14,13 +14,15 @@ class HolidayTest {
     }
 
     private class FakeHoliday extends Holiday {
+        private LocalDate now;
+
         @Override
         protected LocalDate getNow() {
             return LocalDate.of(2020,12,23);
         }
 
         public void set(LocalDate now) {
-
+            this.now = now;
         }
     }
 //    @Test
