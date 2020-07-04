@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class HolidayTest {
     @Test
     void isNotXmas() {
-        new Holiday().isXmas();
-        assertEquals(1,1);
+        boolean actual = new Holiday().isXmas();
+        assertEquals(false,actual);
     }
 }
