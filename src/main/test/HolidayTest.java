@@ -28,7 +28,9 @@ class HolidayTest {
 
     @Test
     void isXmas() {
-        boolean actual = new Holiday().isXmas();
+        FakeHoliday holiday = new FakeHoliday();
+        holiday.set(LocalDate.of(2020,12,25));
+        boolean actual = holiday.isXmas();
         assertEquals(true,actual);
     }
 
