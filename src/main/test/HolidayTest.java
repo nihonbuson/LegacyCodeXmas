@@ -5,6 +5,6 @@ import static org.junit.jupiter.api.Assertions.*;
 class HolidayTest {
     @Test
     void isNotXmas() {
-        new Holiday();
+        new Holiday().isXmas();
     }
 }
