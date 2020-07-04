@@ -13,25 +13,25 @@ class HolidayTest {
         assertEquals(false,actual);
     }
 
-    private class FakeHoliday extends Holiday {
-        private LocalDate now;
-
-        @Override
-        protected LocalDate getNow() {
-            return now;
-        }
-
-        public void set(LocalDate now) {
-            this.now = now;
-        }
-    }
-
     @Test
     void isXmas() {
         FakeHoliday holiday = new FakeHoliday();
         holiday.set(LocalDate.of(2020,12,25));
         boolean actual = holiday.isXmas();
         assertEquals(true,actual);
+    }
+    private class FakeHoliday extends Holiday {
+
+        private LocalDate now;
+
+        @Override
+        protected LocalDate getNow() {
+            return now;
+        }
+        public void set(LocalDate now) {
+            this.now = now;
+        }
+
     }
 
 }
