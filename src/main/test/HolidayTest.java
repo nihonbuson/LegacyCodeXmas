@@ -15,7 +15,7 @@ class HolidayTest {
     private class FakeHoliday extends Holiday {
         @Override
         protected LocalDate getNow() {
-            return super.getNow();
+            return LocalDate.now();
         }
     }
 //    @Test
