@@ -1,5 +1,7 @@
 import org.junit.jupiter.api.Test;
 
+import java.time.LocalDate;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class HolidayTest {
@@ -11,6 +13,10 @@ class HolidayTest {
     }
 
     private class FakeHoliday extends Holiday {
+        @Override
+        protected LocalDate getNow() {
+            return super.getNow();
+        }
     }
 //    @Test
 //    void isXmas() {
