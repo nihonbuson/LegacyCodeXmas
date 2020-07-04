@@ -18,6 +18,10 @@ class HolidayTest {
         protected LocalDate getNow() {
             return LocalDate.of(2020,12,23);
         }
+
+        public void set(LocalDate now) {
+
+        }
     }
 //    @Test
 //    void isXmas() {
