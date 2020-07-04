@@ -25,10 +25,11 @@ class HolidayTest {
             this.now = now;
         }
     }
-//    @Test
-//    void isXmas() {
-//        boolean actual = new Holiday().isXmas();
-//        assertEquals(true,actual);
-//    }
+
+    @Test
+    void isXmas() {
+        boolean actual = new Holiday().isXmas();
+        assertEquals(true,actual);
+    }
 
 }
