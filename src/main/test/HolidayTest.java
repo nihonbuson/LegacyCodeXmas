@@ -7,7 +7,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class HolidayTest {
     @Test
     void isNotXmas() {
-        Holiday holiday = new FakeHoliday();
+        FakeHoliday holiday = new FakeHoliday();
+        holiday.set(LocalDate.of(2020,12,23));
         boolean actual = holiday.isXmas();
         assertEquals(false,actual);
     }
