@@ -18,7 +18,7 @@ class HolidayTest {
 
         @Override
         protected LocalDate getNow() {
-            return LocalDate.of(2020,12,23);
+            return now;
         }
 
         public void set(LocalDate now) {
