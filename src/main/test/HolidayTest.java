@@ -9,6 +9,9 @@ class HolidayTest {
         boolean actual = holiday.isXmas();
         assertEquals(false,actual);
     }
+
+    private class FakeHoliday extends Holiday {
+    }
 //    @Test
 //    void isXmas() {
 //        boolean actual = new Holiday().isXmas();
